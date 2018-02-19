@@ -21,12 +21,12 @@ import { trainingReducer } from './training.reducer';
     CurrentTrainingComponent,
     NewTrainingComponent,
     PastTrainingsComponent,
-    StopTrainingComponent,
-    StoreModule.forFeature('training', trainingReducer)
+    StopTrainingComponent
   ],
   imports: [
     SharedModule,
-    TrainingRoutingModule
+    TrainingRoutingModule,
+    StoreModule.forFeature('training', trainingReducer)
   ],
   entryComponents: [StopTrainingComponent]
 })
